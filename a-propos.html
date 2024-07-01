@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>À propos - Robbie Lens Photographie</title>
+    <!-- le fichier de base style.css est importé par chaque page ; -->
+    <link href="style/style.css" rel="stylesheet">
+    <!-- chaque page possède son propre fichier CSS. -->
+    <link href="style/a-propos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Il suffit d’ajouter une balise <link>  dans le head en indiquant que c’est l'icône du site, le chemin vers le fichier logo.svg -->
+    <link rel="icon" type="image/svg+xml" href="images/Logo.svg">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+</head>
+<body>
+    <!-- intégrer un <header> dans les pages d'accueil et Á propos ; -->
+    <header>
+        <!-- basculer vos liens hypertextes de navigation dans une balise <nav> ; -->
+        <nav>
+            <!-- mettre le logo et les liens de navigation en haut des pages "Accueil" et "À propos" dans une balise div ; -->
+            <!-- <div class="entete"> -->
+            <!-- afficher tout en haut et tout en bas de la page le logo qui renvoie sur la page d'accueil grâce à un lien. -->
+            <a href="index.html" class="lien-icone">
+                <img src="images/logo.png" alt="Logo Robbie Lens">
+            </a>
+            <div>
+                <!-- créer sur la page a-propos.html un lien vers la page d'accueil (sans déplacer les fichiers) ; -->
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <!-- une nouvelle page portfolio. La base de la page a déjà été codée, et ajoutée dans le heade -->
+                <a href="portfolio.html">Portfolio</a>
+            </div>           
+            <!-- </div> -->
+        </nav>    
+    </header>
+    <!-- ajouter <main> là où c'est nécessaire ; -->
+    <main class="a-propos-main">
+        <!-- ajouter une section autour du contenu de la page A-propos ; -->
+        <section>
+            <!-- créer le titre dans la page a-propos.html: "À propos de Robbie Lens" ; -->
+            <h1>À propos</h1>
+            <!-- créer une div , sur la page À propos, qui englobe le paragraphe et la liste de compétences de Robbie Lens -->
+            <div class="carre-contenu">
+                <!-- créer le paragraphe associé -->
+                <p>
+                    Photographe depuis plus de 5 ans, je réalise des reportages aux photos dynamiques et pertinentes pour vos
+                    projets de communication. Créativité, qualité, et sérénité pour vous! Je gère tout, depuis la direction
+                    artistique, la réalisation du reportage jusqu’à la livraison de vos photos retouchées, prêtes à l’emploi.
+                </p>
+                <!-- créer un titre de niveau 2 pour ajouter une section nommée : "Services" ; -->
+                <h2>Services</h2>
+                <!-- créer une liste non ordonnée pour lister les spécialités de Robbie Lens : -->
+                <ul>
+                    <li>Portrait seul ou à plusieurs</li>
+                    <li>Shooting mode</li>
+                    <li>Retouches sur mesure</li>
+                    <li>Développement</li>
+                </ul>
+            </div>
+            <div>
+                <!-- ajouter leur lien vers la page "Portfolio" -->
+                <a href="portfolio.html" class="cta">VOIR MON PORTFOLIO</a>
+            </div>
+        </section>
+        <!-- Vous ajouterez les tarifs à la suite de la page "À propos", après le lien Call to action (appel à l’action). -->
+        <section class="section-tarifs">
+            <h2>Tarifs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Désignation</th>
+                        <th>Quantité</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Retouches photo
+                            studio professionnel</td>
+                        <td>x 800 photos</td>
+                        <td>3200€/800 photos</td>
+                    </tr>
+                    <tr>
+                        <td>Assistant photo
+                            lumière professionnel</td>
+                        <td>x 2 sets studio</td>
+                        <td>1500€/journée</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>  
+    <!-- intégrer un <footer> dans ces même pages ; -->
+    <footer>
+    <!-- mettre les différents logos en bas des deux pages dans une autre div ; -->
+    <!-- mettre le logo et les liens de navigation en haut des pages "Accueil" et "À propos" dans une balise div ; -->
+    <!-- <div class="pied-de-page"> -->
+        <!-- afficher tout en haut et tout en bas de la page le logo qui renvoie sur la page d'accueil grâce à un lien. -->
+        <a href="index.html" class="lien-icone">
+            <img src="images/logo.png" alt="Logo Robbie Lens">
+        </a>
+        <div>
+            <!-- ajouter les liens vers les réseaux sociaux (qui s'ouvrent dans un nouvel onglet) sur la page d'accueil et la page "À propos" : -->
+            <!-- pour Twitter, vous redirigerez vers "https://twitter.com/", -->
+            <a target="_blank" href="https://twitter.com/" class="lien-icone">
+                <!-- remplacer les liens Twitter et Instagram en bas des pages "À propos" et "Accueil" par les icônes correspondantes ; -->
+                <img src="images/twitter.png" alt="Logo Twitter">
+            </a>
+            
+            <a target="_blank" href="https://www.instagram.com/" class="lien-icone">
+                <!-- pour Instagram, le lien pointe vers "https://www.instagram.com/". -->
+                <img src="images/instagram.png" alt="Logo Instagram">
+            </a>
+        </div>    
+    <!-- </div> -->
+    </footer>
+</body>
+</html>

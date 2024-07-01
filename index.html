@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Accueil - Robbie Lens Photographie</title>
+    <!-- le fichier de base style.css est importé par chaque page ; -->
+    <link href="style/style.css" rel="stylesheet">
+    <!-- chaque page possède son propre fichier CSS. -->
+    <link href="style/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Il suffit d’ajouter une balise <link>  dans le head en indiquant que c’est l'icône du site, le chemin vers le fichier logo.svg -->
+    <link rel="icon" type="image/svg+xml" href="images/Logo.svg">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+</head>
+<body>
+    <!-- intégrer un <header> dans les pages d'accueil et Á propos ; -->
+    <header>
+        <!-- basculer vos liens hypertextes de navigation dans une balise <nav> ; -->
+        <nav>
+            <!-- mettre le logo et les liens de navigation en haut des pages "Accueil" et "À propos" dans une balise div ; -->
+            <!-- <div class="entete"> -->
+            <img src="images/Logo.svg" alt="Logo Robbie Lens">
+            <div>
+                <!-- créer sur la page d'accueil un lien vers la page "À propos" (sans déplacer les fichiers) -->
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <!-- une nouvelle page portfolio. La base de la page a déjà été codée, et ajoutée dans le header -->
+                <a href="portfolio.html">Portfolio</a>
+            </div>      
+            <!-- </div> -->
+        </nav>   
+    </header>
+
+    <!-- ajouter <main> là où c'est nécessaire ; -->
+    <main>
+        <!-- ajouter une section autour du contenu de la page d'accueil ; -->
+        <section class="accueil-introduction">
+            <div>
+                <h1>Robbie Lens Photographie</h1>
+                <p>
+                    <!-- Remplacer les <span class="important"></span> par des éléments em tout en gardant le même style. -->
+                    Où <em>professionalisme</em> s’allie avec <em>passion</em>. Depuis
+                    plus de 5 ans maintenant, j’exerce mon métier avec la passion
+                    qui m’anime : capturer l’essence de chaque instant.
+                </p>
+                <!-- changer le lien du bouton “Un projet?Écrivez-moi” pour le faire pointer vers le formulaire -->
+                <a href="#contact" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>          
+            </div>
+            <!-- insérer l'image de Robbie Lens sur la page d'accueil (le fichier s'appelle robbie-lens.png -->
+            <img src="images/robbie-lens.png" alt="Portrait avec effet de la photographe Robbie Lens">             
+        </section>  
+        <!-- des sections ont été ajoutées dans la page d'accueil  -->
+        <section class="accueil-photos">
+            <h2>Mon dernier projet</h2>
+            <!-- importer les images dans la page d'accueil, et créer une grille d'images avec deux rangées de 3 images chacune. -->
+            <div>
+                <img src="images/accueil/element-1.png" alt="Twelve apostles - Australie">
+                <img src="images/accueil/element-2.png" alt="Wai-O-Tapu - Nouvelle-Zélande">
+                <img src="images/accueil/element-3.png" alt="Parc National d’Abel Tasman - Nouvelle-Zélande">
+            </div>
+            <div>
+                <img src="images/accueil/element-4.png" alt="Lac Rotorua - Nouvelle-Zélande">
+                <img src="images/accueil/element-5.png" alt="Milford Sound - Nouvelle-Zélande">
+                <img src="images/accueil/element-6.png" alt="Lac Wanaka - Nouvelle-Zélande">
+            </div>
+        </section>
+        <!-- Vous y trouverez la structure de la nouvelle section à ajouter dans la page d'accueil. -->
+        <!-- changer le lien du bouton “Un projet?Écrivez-moi” pour le faire pointer vers le formulaire -->
+        <section id="contact" class="section-contact">
+            <h2>Parlons de votre projet</h2>
+            <!-- Le formulaire aura une méthode get et restera vide pour l'attribut action -->
+            <form method="get" action="#">
+                <!-- ajouter un champ nom avec le label associé ; -->
+                <div class="form-nom-email">
+                    <div class="form-column">
+                        <label for="nom">nom</label>
+                        <input type="text" name="nom" id="nom">
+                    </div>
+                    <!-- ajouter un champ email avec le label associé ; -->
+                    <div class="form-column">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <!-- ajouter un textarea ayant pour label message ; -->
+                <label for="message">message</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <!-- créer un bouton de validation "Envoyer". -->
+                <input type="submit" value="ENVOYER" class="cta">
+            </form>
+        </section>
+    </main> 
+    <!-- intégrer un <footer> dans ces même pages ; -->
+    <footer>
+    <!-- mettre le logo et les liens de navigation en haut des pages "Accueil" et "À propos" dans une balise div ; -->
+    <!-- <div class="pied-de-page"> -->
+        <img src="images/Logo.svg" alt="Logo Robbie Lens">
+        <!-- mettre les différents logos en bas des deux pages dans une autre div ; -->
+        <div>
+            <!-- ajouter les liens vers les réseaux sociaux (qui s'ouvrent dans un nouvel onglet) sur la page d'accueil et la page "Àpropos" : -->
+            <!-- pour Twitter, vous redirigerez vers "https://twitter.com/", -->
+            <a target="_blank" href="https://twitter.com/" class="lien-icone">
+                <!-- remplacer les liens Twitter et Instagram en bas des pages "À propos" et "Accueil" par les icônes correspondantes ; -->
+                <img src="images/twitter.png" alt="Logo Twitter">
+            </a>   
+            <a target="_blank" href="https://www.instagram.com/" class="lien-icone">
+                <!-- pour Instagram, le lien pointe vers "https://www.instagram.com/". -->
+                <img src="images/instagram.png" alt="Logo Instagram">
+            </a>
+        </div>      
+    <!-- </div> -->
+    </footer>  
+</body>
+</html>

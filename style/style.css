@@ -1,0 +1,169 @@
+* {
+    /* Dans la branche de départ de l'exercice, vous trouverez un bout de CSS qui indique : */
+    /* Cela sert à réinitialiser les marges par défaut des navigateurs. */
+    margin: 0;
+}
+
+body {
+    /* 1em police Manrope  */ /* les listes : 1em police Manrope */ /* les paragraphes:  police Manrope */ /* et les mettre dans la police Manrope,. */  
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+ /* le cœur de la page ait un fond correspondant à #1F2039; */
+    background-color: #1f2039;
+}
+
+a {
+    /* appliquer la couleur black à l'ensemble des liens ; * /* les liens en tête et pied de page soient de couleur #242424, */
+    color: #242424;
+    /* enlever le soulignement   */
+    text-decoration: none;
+}
+
+em {
+    /* sur la page d'accueil, dans le paragraphe d'introduction,vous allez appliquer le style suivant: color: #A5B4FC;
+    au mot "professionnalisme" et au mot "passion" . Pour l'instant, vous utiliserez un <span>,
+    mais nous le modifierons dans le prochain chapitre pour utiliser <em> */
+    color: #a5b4fc;
+    /* Remplacer les <span class="important"></span>par des éléments <em> tout en gardant le même style. 
+    pour garder le même style de <span> */
+    font-style: normal;
+}
+
+h1 {
+    /* les titres H1:3.5em en couleur #A5B4FC police Montserrat*/
+    font-size: 3.5em; 
+    color: #a5b4fc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+/* les paragraphes, les listes et H2 soient de la couleur #F9F8FF (sur fond bleu foncé). */
+    color: #f9f8ff;
+    
+}
+
+p,
+li {
+    /* les paragraphes: 1.1em police */
+    font-size: 1.1em;
+    color: #f9f8ff;
+}
+
+/* adapter les déclarations CSS en fonction des modifications faites. */
+/* replace class="entete" & class="pied-de-page" by header & footer */
+/* .entete,
+.pied-de-page { */
+    /* la div dans laquelle on a les liens en haut des pages, et le pied de page, aient un fond blanc, */
+    /* background-color: white; */
+/* } */
+
+header,
+footer {
+    /* la div dans laquelle on a les liens en haut des pages, et le pied de page, aient un fond blanc, */
+    background-color: white;
+    /*ajouter un padding au header et au footer de 20px en haut et en bas, et de 50px à gauche et à droite;*/
+    /* padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;*/
+    /* padding: 20px 50px 20px 50px; */
+    padding: 20px 50px;
+}
+
+.cta {
+    /* Vous trouverez également des liens hypertextes qui ont été ajoutés: "Un projet ? Écrivez-moi" et "Voir mon portfolio" . 
+    Vous devrez leur ajouter un dégradé qui passe de la couleur #8E86B5 à la couleur #ACAEED  */
+    background: linear-gradient(#8e86b5, #acaeed);
+        /* et les mettre dans la police Manrope,en blanc. */
+    color: white;
+    /* ajouter des arrondis sur les liens "Un projet ? Écrivez-moi" et "Voir mon portfolio",
+       d'une valeur de  50px  (le rendu n'est pas très beau, mais ne vous inquiétez pas,nous allons l'améliorer au fil des chapitres) ; */  
+    border-radius: 50px;
+    padding: 20px 30px;
+    /* transformer les liens qui ont la classe .cta en éléments inline-block avec display */
+    display: inline-block;
+}
+
+a:hover {
+    /* souligner les liens au survol; */
+    text-decoration: underline;
+}
+
+.cta:hover {
+        /* permettre aux liens ayant la classe "cta" d'avoir un dégradé de la couleur   */ /* #696484 à la couleur #8788BA au survol; */
+    background: linear-gradient(#696484, #8788ba);
+    /* (attention, ceux-ci ne sont pas soulignés au survol); */
+    text-decoration: none;
+}
+
+/* a[class="cta"]:hover {
+    .cta: hover == a[class="cta"]: hover
+    background: linear-gradient(#696484, #8788ba);
+    text-decoration: none;
+} */
+
+.lien-icone {
+    margin-left: 30px;
+}
+
+.lien-icone:hover {
+    /* dans les icônes de l'en-tête et du pied-de-page  qui permettent de faire des liens, réduire l' opacité à 0.5 au survol. */
+    opacity: 0.5;
+}
+
+section {
+    /* donner à vos sections (pour les futures sections à venir) un padding de 80px; */
+    padding: 80px;
+}
+
+/* utiliser flex pour avoir le logo en haut à gauche de la page, */
+/* et les liens de navigation à droite dans l’en-tête; */
+footer, 
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-left: 30px;
+}
+
+/* Les liens de navigation du header passent à la verticale et sont centrés. */
+@media screen and (max-width: 996px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav img {
+        margin-bottom: 20px;
+    }
+
+    header,
+    footer {
+        /* Le padding sur le côté des pages passe de 80px à 20px . */
+        padding: 20px 20px;
+    }
+
+    h1 {
+        /* Réduisez la taille des titres à 2em . */
+        font-size: 2em;
+    }
+
+    section {
+        /* Le padding sur le côté des pages passe de 80px à 20px . */
+        padding: 50px 20px 50px 20px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+
+

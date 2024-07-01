@@ -1,0 +1,71 @@
+.a-propos-main {
+  /* centrer le contenu de la page A-propos; */
+  /* P4C1-solution */
+  /* width: 50%;  */
+  margin: auto;
+}
+
+.carre-contenu {
+  /* lui ajouter une bordure à droite et en bas, de 1px d'épaisseur et de la couleur  #8e86b5  . */
+  border-right: 1px #8e86b5 solid;
+  border-bottom: 1px #8e86b5 solid;
+  /* créer un padding de 50px pour carre-contenu; */
+  padding: 50px;
+  /* P4C1-solution */
+  /* Vous ajouterez les tarifs à la suite de la page "À propos",
+    après le lien Call to action (appel à l’action). */
+  /* P4C1-solution */
+  width: 50%;
+  margin: auto;
+  /* ajouter des margin et padding là où il en manque sur les pages "Accueil" et "À propos"(pour rappel, voici la maquette d’inspiration pour le site); */
+  margin-bottom: 80px;
+}
+
+/* aérer le contenu de la page A-propos : 
+mettre de la marge au-dessus du sous-titre "Services:h2" et de la liste des compétences:ul. */
+.carre-contenu h2 {
+  margin-top: 30px;
+}
+
+.carre-contenu ul {
+  margin-top: 30px;
+}
+
+.carre-contenu+div {
+  /* ajouter des margin et padding là où il en manque sur les pages "Accueil" et "À propos"(pour rappel, voici la maquette d’inspiration pour le site); */
+  text-align: center;
+}
+
+/* P4C1-solution */
+table {
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+/* P4C1-solution */
+td,
+th {
+  padding: 15px;
+  border: 1px solid #a5b4fc;
+}
+/* P4C1-solution */
+td {
+  padding: 80px;
+}
+/* P4C1-solution */
+h2 {
+  margin-bottom: 80px;
+}
+/* P4C1-solution */
+h1,
+h2 {
+  text-align: center;
+}
+
+/* Cachez la section "Tarifs" sur la page "À propos" . */
+@media screen and (max-width: 996px) {
+  .section-tarifs {
+    display: none;
+  }
+}

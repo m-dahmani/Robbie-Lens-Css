@@ -1,0 +1,77 @@
+.portfolio-section-photos {
+  background-color: white;
+}
+
+.portfolio-section-photos h2 {
+  color: #242424;
+  margin-bottom: 80px;
+}
+
+/* une première grid avec les images dont le nom commence par "paysage" . Elle comprend 3 colonnes et 3 rangées;
+Les colonnes devront s'adapter à la largeur de l' écran, et les rangées feront 300px de haut,avec un écart de 15px. */
+
+.grid-paysages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  gap: 15px;
+}
+
+/* une deuxième grid de 3 colonnes et 2 rangées,avec les images dont le nom commence par "portrait" . */
+/* Les colonnes devront s'adapter à la largeur de l' écran,et les rangées feront 300px de haut,avec un écart de 15px.  */
+.grid-portraits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 15px;
+}
+
+/* Même si nous ne verrons pas ces propriétés dans ce cours, vous aurez besoin du bout de code dans les sélecteurs 
+.grid-paysages img et .grid-portraits img  afin que la taille de vos images s'adaptent à la taille de votre grid. */
+
+.grid-paysages img,
+.grid-portraits img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* créer sur les images un effet au survol de la souris en affichant un élément (grâce à display) qui : aura un fond noir d’une opacité de 70%;
+s’affichera par-dessus l’image, et y mentionnera le texte suivant : “Voir la photo”,
+comme ceci : */
+
+.lien-conteneur-photo {
+  position: relative;
+}
+
+.photo-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.lien-conteneur-photo:hover .photo-hover {
+  display: flex;
+}
+
+
+/* Tous les éléments qui sont disposés à l'horizontale basculent à la verticale à partir de la taille d' écran 996px */
+@media screen and (max-width: 996px) {
+  .grid-paysages {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .grid-portraits {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
